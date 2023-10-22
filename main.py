@@ -1,3 +1,8 @@
+import sqlite3
+
+sql = sqlite3.connect("file.db")
+cursor = sql.cursor()
+
 page = "index.html"
 
 o = """
