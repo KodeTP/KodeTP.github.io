@@ -1,7 +1,7 @@
-import sqlite3
+import pandas as pd
 
-sql = sqlite3.connect("file.db")
-cursor = sql.cursor()
+recipes = pd.read_csv("../RAW_recipes.csv")
+print(recipes.head)
 
 page = "index.html"
 
